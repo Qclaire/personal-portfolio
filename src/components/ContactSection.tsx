@@ -33,24 +33,25 @@ const ContactSection = () => {
         // Mock submission with DevOps themed messages
         try {
             // Simulate API call with stages like a CI/CD pipeline
-            await new Promise(resolve => setTimeout(resolve, 500)); // Quick initial check
-            
+            await new Promise((resolve) => setTimeout(resolve, 500)); // Quick initial check
+
             // Show pipeline stages
             const stages = [
                 { stage: "initialize", duration: 300 },
                 { stage: "validate", duration: 400 },
                 { stage: "build", duration: 500 },
-                { stage: "deploy", duration: 300 }
+                { stage: "deploy", duration: 300 },
             ];
-            
+
             for (const { stage, duration } of stages) {
-                await new Promise(resolve => setTimeout(resolve, duration));
+                await new Promise((resolve) => setTimeout(resolve, duration));
             }
 
             // Simulated successful response
             setSubmitStatus({
                 success: true,
-                message: "Pipeline completed successfully! Message deployed to inbox. Pull request opened.",
+                message:
+                    "Pipeline completed successfully! Message deployed to inbox. Pull request opened.",
             });
 
             // Reset form
@@ -79,35 +80,41 @@ const ContactSection = () => {
                 <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-neon-pink rounded-full blur-[120px] opacity-10"></div>
                 <div className="absolute top-1/3 left-1/4 w-80 h-80 bg-accent rounded-full blur-[150px] opacity-10"></div>
             </div>
-            
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
                     <div className="inline-block mb-4 px-4 py-1.5 bg-splash bg-opacity-20 backdrop-blur-sm rounded-full">
-                        <span className="text-accent text-sm font-semibold">Initialize Connection</span>
+                        <span className="text-accent text-sm font-semibold">
+                            Initialize Connection
+                        </span>
                     </div>
-                    
+
                     <h2 className="text-4xl font-bold mb-4 glow-text">
                         Open a <span className="text-accent">Pull Request</span>
                     </h2>
-                    
+
                     <div className="mt-4 mb-6 flex justify-center">
                         <div className="flex items-center">
                             <div className="h-px w-8 bg-accent opacity-40"></div>
-                            <div className="mx-2 text-terminal-green text-2xl">{"<-->"}</div>
+                            <div className="mx-2 text-terminal-green text-2xl">
+                                {"<-->"}
+                            </div>
                             <div className="h-px w-8 bg-accent opacity-40"></div>
                         </div>
                     </div>
-                    
+
                     <p className="mt-4 text-lg opacity-80 max-w-2xl mx-auto">
-                        Ready to collaborate on something amazing? Submit a request below
-                        or connect through one of my communication channels.
+                        Ready to collaborate on something amazing? Submit a
+                        request below or connect through one of my communication
+                        channels.
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div className="backdrop-blur-sm bg-background bg-opacity-30 p-8 rounded-lg border border-accent border-opacity-20">
                         <h3 className="text-2xl font-bold mb-6 text-foreground">
-                            <span className="text-terminal-green">$</span> contact --info
+                            <span className="text-terminal-green">$</span>{" "}
+                            contact --info
                         </h3>
 
                         <div className="space-y-6">
@@ -159,7 +166,9 @@ const ContactSection = () => {
                                     <p className="font-medium text-accent">
                                         Phone
                                     </p>
-                                    <p className="mt-1 text-foreground">+233 xx xxx xxxx</p>
+                                    <p className="mt-1 text-foreground">
+                                        +233 xx xxx xxxx
+                                    </p>
                                 </div>
                             </div>
 
@@ -190,14 +199,17 @@ const ContactSection = () => {
                                     <p className="font-medium text-accent">
                                         Location
                                     </p>
-                                    <p className="mt-1 text-foreground">Accra, Ghana</p>
+                                    <p className="mt-1 text-foreground">
+                                        Accra, Ghana
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="mt-8">
                             <h3 className="text-lg font-bold mb-4 text-foreground">
-                                <span className="text-terminal-green">$</span> git remote add origin
+                                <span className="text-terminal-green">$</span>{" "}
+                                git remote add origin
                             </h3>
                             <div className="flex space-x-5">
                                 <a
@@ -259,14 +271,17 @@ const ContactSection = () => {
                     <div className="bg-[#1E1E2E] rounded-lg p-8 border border-accent border-opacity-20 shadow-lg backdrop-blur-sm relative group">
                         {/* Glow effect on hover */}
                         <div className="absolute -inset-px bg-gradient-to-r from-accent to-neon-pink rounded-lg opacity-0 group-hover:opacity-20 blur transition-all duration-500"></div>
-                        
+
                         <div className="relative z-10">
                             <h3 className="text-2xl font-bold mb-6 text-foreground">
-                                <span className="text-terminal-green">$</span> ./submit-message.sh
+                                <span className="text-terminal-green">$</span>{" "}
+                                ./submit-message.sh
                             </h3>
-                            
+
                             <div className="terminal-like mb-4">
-                                <div className="text-terminal-green text-sm font-mono mb-1"># Create a new pipeline for collaboration</div>
+                                <div className="text-terminal-green text-sm font-mono mb-1">
+                                    # Create a new pipeline for collaboration
+                                </div>
                             </div>
 
                             <form onSubmit={handleSubmit} className="font-mono">
@@ -354,7 +369,7 @@ const ContactSection = () => {
                                                 : "bg-red-900 bg-opacity-20 text-red-400"
                                         }`}
                                     >
-                                        {submitStatus.success ? '✅ ' : '❌ '}
+                                        {submitStatus.success ? "✅ " : "❌ "}
                                         {submitStatus.message}
                                     </div>
                                 )}
@@ -369,16 +384,32 @@ const ContactSection = () => {
                                     }`}
                                 >
                                     <span className="relative z-10">
-                                        {isSubmitting ? 
+                                        {isSubmitting ? (
                                             <span className="flex items-center justify-center">
-                                                <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
-                                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                                <svg
+                                                    className="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <circle
+                                                        className="opacity-25"
+                                                        cx="12"
+                                                        cy="12"
+                                                        r="10"
+                                                        stroke="currentColor"
+                                                        strokeWidth="4"
+                                                    ></circle>
+                                                    <path
+                                                        className="opacity-75"
+                                                        fill="currentColor"
+                                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                                                    ></path>
                                                 </svg>
                                                 ./sending-message.sh
-                                            </span> : 
-                                            'git push --message'
-                                        }
+                                            </span>
+                                        ) : (
+                                            "git push --message"
+                                        )}
                                     </span>
                                 </button>
                             </form>

@@ -8,19 +8,23 @@ const Footer = () => {
                 <div className="circuit-pattern absolute inset-0 opacity-5"></div>
                 <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-40"></div>
             </div>
-            
+
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
                         <div className="flex items-center space-x-2 font-mono">
                             <span className="text-terminal-green">$</span>
                             <p className="text-foreground">
-                                <span className="text-accent">echo</span> "© {currentYear} Oswald Gyabaah · DevOps Engineering Lead"
+                                <span className="text-accent">echo</span> "©{" "}
+                                {currentYear} Oswald Gyabaah · DevOps
+                                Engineering Lead"
                             </p>
                         </div>
                         <div className="mt-2 text-sm opacity-70 font-mono">
                             <span className="text-terminal-green">// </span>
-                            <span>Infrastructure as code, deployed with passion</span>
+                            <span>
+                                Infrastructure as code, deployed with passion
+                            </span>
                         </div>
                     </div>
 
@@ -83,7 +87,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                
+
                 <div className="mt-6 text-center text-xs text-gray-400 font-mono">
                     <div className="inline-flex items-center">
                         <div className="h-px w-12 bg-accent opacity-30 mr-2"></div>

@@ -4,9 +4,9 @@ This guide will help you deploy your personal portfolio to GitHub Pages with aut
 
 ## 📋 Prerequisites
 
-- GitHub account
-- Git installed locally
-- Node.js and npm installed
+-   GitHub account
+-   Git installed locally
+-   Node.js and npm installed
 
 ## 🚀 Deployment Steps
 
@@ -53,10 +53,10 @@ basePath: process.env.NODE_ENV === 'production' ? '/YOUR-REPO-NAME' : '',
 
 ## 🔧 Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run deploy` - Build and prepare for deployment
-- `npm run preview` - Preview the built site locally
+-   `npm run dev` - Start development server
+-   `npm run build` - Build for production
+-   `npm run deploy` - Build and prepare for deployment
+-   `npm run preview` - Preview the built site locally
 
 ## 🌐 Custom Domain (Optional)
 
@@ -64,9 +64,9 @@ If you have a custom domain:
 
 1. Rename `public/CNAME.example` to `public/CNAME`
 2. Replace the content with your domain name:
-   ```
-   yourdomain.com
-   ```
+    ```
+    yourdomain.com
+    ```
 3. Configure your domain's DNS to point to GitHub Pages
 
 ## 🔄 Automatic Deployments
@@ -74,18 +74,20 @@ If you have a custom domain:
 The CI/CD pipeline will automatically:
 
 1. **Trigger on**:
-   - Push to `main` branch
-   - Pull requests to `main` branch
+
+    - Push to `main` branch
+    - Pull requests to `main` branch
 
 2. **Build process**:
-   - Install dependencies
-   - Run tests (if available)
-   - Build the Next.js application
-   - Deploy to GitHub Pages
+
+    - Install dependencies
+    - Run tests (if available)
+    - Build the Next.js application
+    - Deploy to GitHub Pages
 
 3. **Access your site**:
-   - URL: `https://USERNAME.github.io/personal-portfolio/`
-   - Replace `USERNAME` with your GitHub username
+    - URL: `https://USERNAME.github.io/personal-portfolio/`
+    - Replace `USERNAME` with your GitHub username
 
 ## 🐛 Troubleshooting
 
@@ -131,9 +133,9 @@ The site will automatically update whenever you push changes to the main branch!
 
 ## 🔒 Security Note
 
-- Repository must be public for free GitHub Pages
-- Avoid committing sensitive information
-- Environment variables should be added through GitHub repository settings
+-   Repository must be public for free GitHub Pages
+-   Avoid committing sensitive information
+-   Environment variables should be added through GitHub repository settings
 
 ---
 

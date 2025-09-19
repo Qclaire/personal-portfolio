@@ -15,19 +15,29 @@ const AboutSection = () => {
                             Professional Summary
                         </h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-6">
-                            I'm a seasoned DevOps Engineering Lead with over 10 years of experience transforming software delivery practices. 
-                            I specialize in building resilient cloud infrastructure, implementing robust CI/CD pipelines, and fostering 
-                            collaborative DevOps cultures within organizations.
+                            I'm a seasoned DevOps Engineering Lead with over 10
+                            years of experience transforming software delivery
+                            practices. I specialize in building resilient cloud
+                            infrastructure, implementing robust CI/CD pipelines,
+                            and fostering collaborative DevOps cultures within
+                            organizations.
                         </p>
                         <p className="text-gray-600 dark:text-gray-300 mb-6">
-                            My expertise includes container orchestration with Kubernetes, multi-cloud infrastructure management, 
-                            and automation at scale. I'm passionate about implementing infrastructure as code, security best practices, 
-                            and observability solutions that drive operational excellence.
+                            My expertise includes container orchestration with
+                            Kubernetes, multi-cloud infrastructure management,
+                            and automation at scale. I'm passionate about
+                            implementing infrastructure as code, security best
+                            practices, and observability solutions that drive
+                            operational excellence.
                         </p>
                         <p className="text-gray-600 dark:text-gray-300">
-                            As a technical leader, I help organizations adopt modern DevOps practices, improve deployment frequency, 
-                            and reduce time-to-market while maintaining high reliability standards. I excel at bridging gaps between 
-                            development and operations teams to create seamless software delivery pipelines.
+                            As a technical leader, I help organizations adopt
+                            modern DevOps practices, improve deployment
+                            frequency, and reduce time-to-market while
+                            maintaining high reliability standards. I excel at
+                            bridging gaps between development and operations
+                            teams to create seamless software delivery
+                            pipelines.
                         </p>
                     </div>
 
@@ -44,9 +54,13 @@ const AboutSection = () => {
                                 Fortune 500 Technology Company • 2020 - Present
                             </p>
                             <p className="text-gray-600 dark:text-gray-300 mt-2">
-                                Leading a team of 12 DevOps engineers responsible for cloud infrastructure on AWS and GCP.
-                                Architected and implemented a multi-region Kubernetes platform supporting 100+ microservices.
-                                Reduced deployment time by 80% through automated CI/CD pipelines and infrastructure as code.
+                                Leading a team of 12 DevOps engineers
+                                responsible for cloud infrastructure on AWS and
+                                GCP. Architected and implemented a multi-region
+                                Kubernetes platform supporting 100+
+                                microservices. Reduced deployment time by 80%
+                                through automated CI/CD pipelines and
+                                infrastructure as code.
                             </p>
                         </div>
 
@@ -58,15 +72,20 @@ const AboutSection = () => {
                                 Financial Services Company • 2017 - 2020
                             </p>
                             <p className="text-gray-600 dark:text-gray-300 mt-2">
-                                Implemented infrastructure as code using Terraform and CloudFormation across AWS environments.
-                                Designed and deployed CI/CD pipelines with Jenkins for containerized applications.
-                                Improved system reliability with comprehensive monitoring solutions using Prometheus and Grafana.
+                                Implemented infrastructure as code using
+                                Terraform and CloudFormation across AWS
+                                environments. Designed and deployed CI/CD
+                                pipelines with Jenkins for containerized
+                                applications. Improved system reliability with
+                                comprehensive monitoring solutions using
+                                Prometheus and Grafana.
                             </p>
                         </div>
 
                         <div>
                             <h4 className="text-xl font-medium text-gray-900 dark:text-white">
-                                Master of Science in Computer Science, Cloud Computing
+                                Master of Science in Computer Science, Cloud
+                                Computing
                             </h4>
                             <p className="text-gray-500 dark:text-gray-400">
                                 Top Technical University • 2015 - 2017

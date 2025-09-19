@@ -32,8 +32,16 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
     title: "Oswald Gyabaah | DevOps Engineer Portfolio",
-    description: "A playful showcase of Oswald Gyabaah's DevOps expertise and engineering leadership",
-    keywords: ["Oswald Gyabaah", "DevOps", "Engineering", "Portfolio", "Creative", "Vibrant"],
+    description:
+        "A playful showcase of Oswald Gyabaah's DevOps expertise and engineering leadership",
+    keywords: [
+        "Oswald Gyabaah",
+        "DevOps",
+        "Engineering",
+        "Portfolio",
+        "Creative",
+        "Vibrant",
+    ],
 };
 
 export default function RootLayout({
@@ -50,9 +58,7 @@ export default function RootLayout({
                 <BackgroundParticles />
 
                 {/* Main Content */}
-                <div className="perspective-container">
-                    {children}
-                </div>
+                <div className="perspective-container">{children}</div>
 
                 {/* Add script for handling interactive elements */}
                 <Script id="interactive-elements">{`
